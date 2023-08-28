@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SampleApp</string>
+    <string name="refctoringapp_no_internet">Please check your Internet connection \n try again</string>
+    <string name="mynewapp_try_again">Try again</string>
+    <string name="refctoringappdialog_title">Connection Failed</string>
+</resources>

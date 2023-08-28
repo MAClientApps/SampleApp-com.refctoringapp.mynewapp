@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+
+    <application
+        android:name=".mynewapp_Application"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:usesCleartextTraffic="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SampleApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".SplashmynewappActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.SampleApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="appsflyer.onelink.me"
+                    android:scheme="https" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="appsflyer://" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".WebmynewappActivity" />
+
+        <activity
+            android:name=".mynewapp_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/launcherLangTheme" />
+
+        <meta-data
+            android:name="applovin.sdk.key"
+            android:value="9Mmo8af6r9Ra2RlaxqaPqUD6h8bhmuJpNkThxJR6Vgd7pr03LiTSe7pe9CwCf4l0HrX2f2lTK-P6HrH-RGeIq8" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>

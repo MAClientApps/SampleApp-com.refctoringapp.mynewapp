@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "259118084454",
+    "project_id": "fir-apps-343d1",
+    "storage_bucket": "fir-apps-343d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259118084454:android:c6b7aa9cd2f98de75618a7",
+        "android_client_info": {
+          "package_name": "com.refctoringapp.mynewapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259118084454-ibslrcv3ijaajcforp3iuppvcn65kcr9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdDP71g2vpz1w0AvyYGKitN38b5E6Qhdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259118084454-ibslrcv3ijaajcforp3iuppvcn65kcr9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
